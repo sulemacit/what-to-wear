@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("images/background2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: transparent;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero img {
+  width: 50%;
+  height: 460px; 
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.seasons {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.seasons img {
+  width: 22%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.seasons img:hover {
+  transform: scale(1.08);
+}
+
+.widgets-chat {
+  display: flex;
+  padding: 40px;
+}
+
+.widgets {
+  width: 40%;
+}
+
+.widget {
+  background: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.music-list {
+  list-style: none;
+  padding: 0;
+}
+
+.music-list li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.music-list li:hover {
+  text-decoration: underline;
+}
+
+.chat {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about {
+  padding: 60px;
+  background: rgba(3, 70, 15, 0);
+}
+/* From Uiverse.io by adamgiebl */
+.neu-button {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc,
+              inset -4px -4px 10px #ffffff;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 30px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+}
+
+.neu-button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc,
+              inset -2px -2px 5px #ffffff,
+              2px 2px 5px #bcbcbc,
+              -2px -2px 5px #ffffff;
+}
+
+.neu-button:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc,
+              inset -2px -2px 5px #ffffff,
+              2px 2px 5px #bcbcbc,
+              -2px -2px 5px #ffffff;
+}
+.bottom-panel {
+  display: flex;
+  gap: 40px;
+  padding: 60px;
+  align-items: flex-start;
+}
+
+.left-panel {
+  width: 40%;
+}
+
+.right-panel {
+  width: 60%;
+}
+
+.fabric-card {
+  background: url("images/fabric-bg.jpg") center / cover no-repeat;
+ padding: 40px 40px 40px 50px;
+}
+
+
+
+.fabric-intro {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.fabric-item {
+  margin-bottom: 10px;
+}
+
+.styling-direction {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.season-item {
+  width: 22%;
+  text-align: center;
+}
+
+.season-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.season-item img:hover {
+  transform: scale(1.08);
+}
+
+.artist {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.artwork {
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.7;
+}
+/* FABRIC BACKGROUND SHARED STYLE */
+.fabric-bg {
+  background-image: url("images/fabric-bg.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.fabric-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+  z-index: 0;
+}
+
+.fabric-bg * {
+  position: relative;
+  z-index: 1;
+}
+/* WEATHER LIVE BACKGROUND — CLEAR VERSION */
+.weather-clear {
+  background:
+    url("images/fabric-bg.jpg") center / cover no-repeat !important;
+}
+/* Let's Start Button Fix */
+.start-btn {
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 12px;
+  background: #e0e0e0;
+  color: #ca81bac2;
+
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  opacity: 0.9;
+}
